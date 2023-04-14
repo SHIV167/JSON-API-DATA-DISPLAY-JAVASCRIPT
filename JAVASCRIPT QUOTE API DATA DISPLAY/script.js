@@ -22,3 +22,44 @@ $(document).ready(()=>{
     $("p").slideToggle("1200");
   });
 });
+
+
+
+
+
+//RETRIVE API DATA USING FOR EACH LOOP
+
+/* fetch('https://jsonplaceholder.typicode.com/users')
+.then(res => { 
+return res.json();
+})
+
+.then(data =>{
+	data.forEach(user =>{
+		const markup = `<li>${user.name}</li>`;
+		document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
+		
+	} );
+	
+
+
+})
+.catch(error => console.log(error)); */
+
+
+//RETRIVE API DATA USING MAP FUNCTION
+
+/* async function callAPI(){
+	let result = await fetch('https://jsonplaceholder.typicode.com/users');
+	
+	result = await result.json();
+	console.warn(result)
+	document.getElementById("userData").innerHTML = result.map((user) => 
+     `<tr><td>${user.name}</td><td>${user.id}</td></tr>`
+
+
+	).join("");
+}
+callAPI(); */
+
+
